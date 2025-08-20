@@ -29,7 +29,7 @@ const AuthModal = ({ onClose }) => {
       <div className="auth-modal-container">
         {/* Left Banner Image */}
         <div className="auth-modal-image">
-          <img src={`${import.meta.env.BASE_URL}images/auth-banner.png`}alt="auth-banner"/> 
+          <img src="public/images/auth-banner.png" alt="auth-banner"/> 
         </div>
 
         {/* Right Form Section */}

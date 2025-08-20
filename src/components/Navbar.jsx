@@ -12,8 +12,8 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         {/* Logo */}
-            <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Logo" className='navbar-logo'/>
-            <div className="navbar-brand">Travels</div>
+            <img src="public/images/logo.png" alt="Logo" className='navbar-logo'/>
+            <div className="navbar-brand">RRR Travels</div>
         {/* Search Bar */}
         <div className="navbar-search">
           <div className="search-container">
