@@ -1,0 +1,143 @@
+/* src/components/DestinationSlider.css */
+.destination-slider-container {
+  display: flex;
+  align-items: center;
+  padding: 10px 80px;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  flex-wrap: nowrap;
+}
+
+.destination-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 24px;
+  padding: 10px 0;
+  flex: 1;
+}
+
+.destination-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.destination-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-width: 100px;
+  cursor: pointer;
+  color: #444;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.destination-item img.destination-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.destination-item.active {
+  color: #f37022;
+  font-weight: bold;
+}
+
+.destination-item.active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #f37022;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+
+.trending-tag {
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  background: #f37022;
+  color: white;
+  font-size: 10px;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+.arrow {
+  border: none;
+  background: #eee;
+  font-size: 20px;
+  padding: 4px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 10px;
+  z-index: 2;
+}
+
+.arrow.left {
+  margin-left: 0;
+}
+
+
+.arrow.right {
+  margin-right: 0;
+}
+
+.vertical-divider {
+  height: 50px;
+  width: 1px;
+  background-color: #ddd;
+  margin: 0 15px;
+}
+
+.toggle-button {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 2px;
+}
+
+.toggle-button button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  cursor: pointer;
+}
+
+#button-tour {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.toggle-button button.active {
+  background-color: #f37022;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .destination-slider-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .destination-slider {
+    flex: 1 0 100%;
+    justify-content: start;
+  }
+
+  .vertical-divider,
+  .arrow {
+    display: none;
+  }
+
+  .toggle-button {
+    margin-top: 10px;
+  }
+}

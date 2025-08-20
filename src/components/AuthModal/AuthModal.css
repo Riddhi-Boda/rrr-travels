@@ -1,0 +1,143 @@
+.auth-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.auth-modal-container {
+  display: flex;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 90%;
+  height: 520px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Left side image */
+.auth-modal-image { 
+  width: 50%;
+  height: 100%;
+}
+
+.auth-modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right side form */
+.auth-modal-form {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  position: relative;
+}
+
+.auth-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.auth-toggle-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-toggle-buttons button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #666;
+  border-bottom: 2px solid transparent;
+}
+
+.auth-toggle-buttons button.active {
+  color: #ff6200;
+  border-bottom: 2px solid #ff6200;
+}
+
+.close-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+}
+
+.phone-input-group {
+  display: flex;
+  align-items: center;
+}
+
+.country-code {
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+.phone-input-group input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  font-size: 14px;
+  outline: none;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #ff6200;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #e25600;
+}
