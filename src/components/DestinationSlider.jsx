@@ -59,7 +59,8 @@ const DestinationSlider = () => {
             }`}
           >
             <img
-              src={`${import.meta.env.BASE_URL}images/${dest.icon}.png`}
+              // src={`${import.meta.env.BASE_URL}images/${dest.icon}.png`}
+              src="images/{dest.icon}.png"
               alt={dest.name}
               className="destination-icon"
             />
